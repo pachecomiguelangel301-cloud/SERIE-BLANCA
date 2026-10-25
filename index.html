@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parcial Interactivo: Citogenética y Hematología</title>
+    <title>Parcial Interactivo: Serie Blanca y Citología Sanguínea</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .option-label { transition: all 0.2s ease-in-out; }
@@ -13,8 +13,8 @@
 <body class="bg-slate-950 text-slate-100 font-sans min-h-screen antialiased">
     <div class="max-w-4xl mx-auto px-4 py-8">
         <header class="bg-slate-900 border border-slate-800 rounded-2xl p-6 mb-8 shadow-2xl text-center">
-            <h1 class="text-2xl md:text-3xl font-extrabold text-teal-400 mb-2">Examen Parcial: Citogenética, Genética y Células Sanguíneas</h1>
-            <p class="text-slate-300 text-sm md:text-base">Evaluación Interactiva con Casos Clínicos, Identificación Microscópica e Imagenología</p>
+            <h1 class="text-2xl md:text-3xl font-extrabold text-teal-400 mb-2">Examen Parcial: Serie Blanca e Identificación Microscópica</h1>
+            <p class="text-slate-300 text-sm md:text-base">Evaluación Interactiva con Casos Clínicos y Células Sanguíneas</p>
             <div class="mt-4 inline-flex items-center gap-4 bg-slate-950 px-4 py-2 rounded-lg border border-slate-800 text-sm">
                 <span class="text-teal-400 font-semibold">Total de Preguntas: 6</span>
                 <span class="text-slate-600">|</span>
@@ -23,17 +23,17 @@
         </header>
 
         <form id="examForm" class="space-y-6">
-            <!-- PREGUNTA 1: IMAGEN 1 (Neutrófilo) -->
+            <!-- PREGUNTA 1 -->
             <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
                 <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Identificación Microscópica 1</div>
                 <h3 class="text-lg font-bold text-white mb-3">1. Observa el frotis de sangre periférica de la imagen. ¿A qué tipo celular corresponde la célula señalada y ampliada en verde?</h3>
                 <div class="mb-4 flex justify-center">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0CAYAAADL1t+KAAAACXBIWXMAAAsTAAALEwEAmpwYAAAgAElEQVR4nOzdW3bcSLImYMS0/3/p3q1h0bW3cKj3xM1kF3R18nI3H7Y..." alt="Célula Sanguínea 1" class="rounded-lg border border-slate-700 max-h-72 object-contain bg-black/40 p-2">
+                    <img src="img1.png" alt="Imagen 1" class="rounded-lg border border-slate-700 max-h-80 object-contain bg-black/40 p-2 shadow-md">
                 </div>
                 <div class="space-y-2">
                     <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
                         <input type="radio" name="q1" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
-                        <span class="text-sm text-slate-200">Neutrófilo segmentado (leucocito polimorfonuclear con núcleo multilobulado).[cite: 9]</span>
+                        <span class="text-sm text-slate-200">Neutrófilo segmentado (leucocito polimorfonuclear con núcleo multilobulado).</span>
                     </label>
                     <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
                         <input type="radio" name="q1" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
@@ -51,17 +51,17 @@
                 <div id="feedback-q1" class="mt-3 text-sm font-medium hidden"></div>
             </div>
 
-            <!-- PREGUNTA 2: IMAGEN 2 (Linfocito) -->
+            <!-- PREGUNTA 2 -->
             <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
                 <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Identificación Microscópica 2</div>
                 <h3 class="text-lg font-bold text-white mb-3">2. En esta microfotografía de sangre periférica, ¿qué tipo de célula mononuclear se encuentra resaltada en el círculo verde?</h3>
                 <div class="mb-4 flex justify-center">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0CAYAAADL1t+KAAAACXBIWXMAAAsTAAALEwEAmpwYAAAgAElEQVR4nOzdW3bcSLImYMS0/3/p3q1h0bW3cKj3xM1kF3R18nI3H7Y..." alt="Célula Sanguínea 2" class="rounded-lg border border-slate-700 max-h-72 object-contain bg-black/40 p-2">
+                    <img src="img2.png" alt="Imagen 2" class="rounded-lg border border-slate-700 max-h-80 object-contain bg-black/40 p-2 shadow-md">
                 </div>
                 <div class="space-y-2">
                     <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
                         <input type="radio" name="q2" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
-                        <span class="text-sm text-slate-200">Linfocito (caracterizado por núcleo redondo denso y escaso citoplasma azulado).[cite: 8]</span>
+                        <span class="text-sm text-slate-200">Linfocito (caracterizado por núcleo redondo denso y escaso citoplasma azulado).</span>
                     </label>
                     <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
                         <input type="radio" name="q2" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
@@ -79,17 +79,17 @@
                 <div id="feedback-q2" class="mt-3 text-sm font-medium hidden"></div>
             </div>
 
-            <!-- PREGUNTA 3: IMAGEN 3 (Linfocito con procidencia/morfología variante) -->
+            <!-- PREGUNTA 3 -->
             <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
                 <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Identificación Microscópica 3</div>
                 <h3 class="text-lg font-bold text-white mb-3">3. Analizando la célula mononuclear señalada en esta muestra sanguínea, ¿cuál es su clasificación histológica correcta?</h3>
                 <div class="mb-4 flex justify-center">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0CAYAAADL1t+KAAAACXBIWXMAAAsTAAALEwEAmpwYAAAgAElEQVR4nOzdW3bcSLImYMS0/3/p3q1h0bW3cKj3xM1kF3R18nI3H7Y..." alt="Célula Sanguínea 3" class="rounded-lg border border-slate-700 max-h-72 object-contain bg-black/40 p-2">
+                    <img src="img3.png" alt="Imagen 3" class="rounded-lg border border-slate-700 max-h-80 object-contain bg-black/40 p-2 shadow-md">
                 </div>
                 <div class="space-y-2">
                     <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
                         <input type="radio" name="q3" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
-                        <span class="text-sm text-slate-200">Linfocito atípico / reactivo (o variante linfocitaria).[cite: 7]</span>
+                        <span class="text-sm text-slate-200">Linfocito atípico / reactivo (o variante linfocitaria).</span>
                     </label>
                     <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
                         <input type="radio" name="q3" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
@@ -107,17 +107,17 @@
                 <div id="feedback-q3" class="mt-3 text-sm font-medium hidden"></div>
             </div>
 
-            <!-- PREGUNTA 4: IMAGEN 4 (Eosinófilo) -->
+            <!-- PREGUNTA 4 -->
             <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
                 <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Identificación Microscópica 4</div>
                 <h3 class="text-lg font-bold text-white mb-3">4. Observe la presencia de gránulos citoplasmáticos prominentes en la célula resaltada. ¿A qué grupo celular pertenece?</h3>
                 <div class="mb-4 flex justify-center">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0CAYAAADL1t+KAAAACXBIWXMAAAsTAAALEwEAmpwYAAAgAElEQVR4nOzdW3bcSLImYMS0/3/p3q1h0bW3cKj3xM1kF3R18nI3H7Y..." alt="Célula Sanguínea 4" class="rounded-lg border border-slate-700 max-h-72 object-contain bg-black/40 p-2">
+                    <img src="img4.png" alt="Imagen 4" class="rounded-lg border border-slate-700 max-h-80 object-contain bg-black/40 p-2 shadow-md">
                 </div>
                 <div class="space-y-2">
                     <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
                         <input type="radio" name="q4" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
-                        <span class="text-sm text-slate-200">Eosinófilo (caracterizado por gránulos eosinofílicos/anaranjados y núcleo bilobulado).[cite: 6]</span>
+                        <span class="text-sm text-slate-200">Eosinófilo (caracterizado por gránulos anaranjados y núcleo bilobulado).</span>
                     </label>
                     <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
                         <input type="radio" name="q4" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
@@ -135,17 +135,17 @@
                 <div id="feedback-q4" class="mt-3 text-sm font-medium hidden"></div>
             </div>
 
-            <!-- PREGUNTA 5: IMAGEN 5 (Basófilo o variante granulocítica) -->
+            <!-- PREGUNTA 5 -->
             <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
                 <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Identificación Microscópica 5</div>
                 <h3 class="text-lg font-bold text-white mb-3">5. En esta última microfotografía hematológica, ¿cuál es la estirpe leucocitaria señalada con la lupa circular?</h3>
                 <div class="mb-4 flex justify-center">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0CAYAAADL1t+KAAAACXBIWXMAAAsTAAALEwEAmpwYAAAgAElEQVR4nOzdW3bcSLImYMS0/3/p3q1h0bW3cKj3xM1kF3R18nI3H7Y..." alt="Célula Sanguínea 5" class="rounded-lg border border-slate-700 max-h-72 object-contain bg-black/40 p-2">
+                    <img src="img5.png" alt="Imagen 5" class="rounded-lg border border-slate-700 max-h-80 object-contain bg-black/40 p-2 shadow-md">
                 </div>
                 <div class="space-y-2">
                     <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
                         <input type="radio" name="q5" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
-                        <span class="text-sm text-slate-200">Basófilo (con abundantes gránulos oscuros que a menudo tapan el núcleo).[cite: 5]</span>
+                        <span class="text-sm text-slate-200">Basófilo (con abundantes gránulos oscuros que cubren el núcleo).</span>
                     </label>
                     <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
                         <input type="radio" name="q5" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
@@ -163,117 +163,9 @@
                 <div id="feedback-q5" class="mt-3 text-sm font-medium hidden"></div>
             </div>
 
-            <!-- PREGUNTA 6: Citogenética y Anticoagulante -->
+            <!-- PREGUNTA 6 -->
             <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl">
-                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso Clínico Teórico-Práctico 6</div>
+                <div class="text-xs font-bold text-teal-400 uppercase tracking-wider mb-1">Caso Teórico 6</div>
                 <h3 class="text-lg font-bold text-white mb-3">6. ¿Cuál es el anticoagulante de elección que debe utilizarse obligatoriamente en el tubo de recolección de sangre periférica para realizar cultivos celulares destinados al análisis citogenético (cariotipo)?</h3>
                 <div class="space-y-2">
-                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
-                        <input type="radio" name="q6" value="a" class="mt-1 text-teal-500 focus:ring-teal-400">
-                        <span class="text-sm text-slate-200">Heparina (sódica o de litio), ya que no interfiere con la proliferación mitótica de los linfocitos (a diferencia del EDTA o citrato que quelan el calcio e inhiben el crecimiento celular).</span>
-                    </label>
-                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
-                        <input type="radio" name="q6" value="b" class="mt-1 text-teal-500 focus:ring-teal-400">
-                        <span class="text-sm text-slate-200">EDTA, indispensable para fijar cromosomas in vivo.</span>
-                    </label>
-                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
-                        <input type="radio" name="q6" value="c" class="mt-1 text-teal-500 focus:ring-teal-400">
-                        <span class="text-sm text-slate-200">Citrato de sodio al 3.2%, ideal para activar la mitosis linfocitaria.</span>
-                    </label>
-                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor-pointer hover:bg-slate-800/50">
-                        <input type="radio" name="q6" value="d" class="mt-1 text-teal-500 focus:ring-teal-400">
-                        <span class="text-sm text-slate-200">Oxalato de potasio para hemólisis controlada.</span>
-                    </label>
-                </div>
-                <div id="feedback-q6" class="mt-3 text-sm font-medium hidden"></div>
-            </div>
-
-            <!-- Botón de Envío y Resultados -->
-            <div class="pt-4 text-center">
-                <button type="button" id="submitBtn" class="bg-teal-500 hover:bg-teal-600 text-slate-950 font-bold px-8 py-3 rounded-xl shadow-lg transition-all transform hover:scale-105">
-                    Calificar Examen Parcial
-                </button>
-            </div>
-        </form>
-
-        <div id="resultsCard" class="hidden mt-8 bg-slate-900 border-2 border-teal-500/50 rounded-2xl p-6 shadow-2xl text-center">
-            <h2 class="text-2xl font-bold text-teal-400 mb-2">Resultados de la Evaluación</h2>
-            <p class="text-3xl font-extrabold text-white mb-4" id="scoreDisplay">0 / 6 (0%)</p>
-            <p class="text-slate-300 text-sm" id="feedbackMessage"></p>
-        </div>
-    </div>
-
-    <script>
-        let seconds = 0;
-        const timerEl = document.getElementById('timer');
-        setInterval(() => {
-            seconds++;
-            const mins = Math.floor(seconds / 60).toString().padStart(2, '0');
-            const secs = (seconds % 60).toString().padStart(2, '0');
-            timerEl.textContent = `Tiempo transcurrido: ${mins}:${secs}`;
-        }, 1000);
-
-        const correctAnswers = {
-            q1: 'a',
-            q2: 'a',
-            q3: 'a',
-            q4: 'a',
-            q5: 'a',
-            q6: 'a'
-        };
-
-        const explanations = {
-            q1: "Correcto. La imagen muestra un neutrófilo segmentado con su típico núcleo multilobulado.[cite: 9]",
-            q2: "Correcto. Corresponde a un linfocito, reconocido por su núcleo redondo y denso con escaso citoplasma.[cite: 8]",
-            q3: "Correcto. Corresponde a un linfocito atípico o reactivo, caracterizado por variaciones morfológicas en estimulación inmune.[cite: 7]",
-            q4: "Correcto. Se trata de un eosinófilo, distinguible por sus gránulos anaranjados brillantes.[cite: 6]",
-            q5: "Correcto. Corresponde a un basófilo, cuyos gránulos oscuros densos tapan parcialmente el núcleo.[cite: 5]",
-            q6: "Correcto. La heparina es el anticoagulante de elección para cariotipo porque no inhibe la división mitótica."
-        };
-
-        document.getElementById('submitBtn').addEventListener('click', function() {
-            let score = 0;
-            const total = 6;
-
-            for (let i = 1; i <= total; i++) {
-                const qKey = `q${i}`;
-                const selected = document.querySelector(`input[name="${qKey}"]:checked`);
-                const feedbackEl = document.getElementById(`feedback-${qKey}`);
-                feedbackEl.classList.remove('hidden');
-
-                if (selected) {
-                    if (selected.value === correctAnswers[qKey]) {
-                        score++;
-                        feedbackEl.textContent = "✔ " + explanations[qKey];
-                        feedbackEl.className = "mt-3 text-sm font-medium text-teal-400 bg-teal-950/40 p-2.5 rounded-lg border border-teal-800/50";
-                    } else {
-                        feedbackEl.textContent = "✖ Incorrecto. " + explanations[qKey];
-                        feedbackEl.className = "mt-3 text-sm font-medium text-rose-400 bg-rose-950/40 p-2.5 rounded-lg border border-rose-800/50";
-                    }
-                } else {
-                    feedbackEl.textContent = "✖ No respondida. " + explanations[qKey];
-                    feedbackEl.className = "mt-3 text-sm font-medium text-amber-400 bg-amber-950/40 p-2.5 rounded-lg border border-amber-800/50";
-                }
-            }
-
-            const percentage = Math.round((score / total) * 100);
-            const resultsCard = document.getElementById('resultsCard');
-            const scoreDisplay = document.getElementById('scoreDisplay');
-            const feedbackMessage = document.getElementById('feedbackMessage');
-
-            scoreDisplay.textContent = `${score} / ${total} (${percentage}%)`;
-            resultsCard.classList.remove('hidden');
-
-            if (percentage >= 90) {
-                feedbackMessage.textContent = "¡Nivel sobresaliente! Dominas a la perfección la identificación celular hematológica y los fundamentos de laboratorio.";
-            } else if (percentage >= 70) {
-                feedbackMessage.textContent = "¡Buen trabajo! Tienes una base sólida en citología sanguínea.";
-            } else {
-                feedbackMessage.textContent = "Examen completado. Te sugerimos repasar la morfología de los leucocitos en el frotis periférico.";
-            }
-
-            resultsCard.scrollIntoView({ behavior: 'smooth' });
-        });
-    </script>
-</body>
-</html>
+                    <label class="option-label flex items-start gap-3 bg-slate-950/60 border border-slate-800/80 p-3 rounded-lg cursor
